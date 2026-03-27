@@ -12,6 +12,7 @@ def parse_args():
     parser.add_argument("--output", type=str, default="track_sample.json", help="Output JSON path")
     parser.add_argument("--device", type=str, default="mps", help="Device to run on (e.g., mps, cuda, cpu)")
     parser.add_argument("--out_video", type=str, default="track_output.mp4", help="Output tracked video path")
+    parser.add_argument("--imgsz", type=int, default=640, help="Image size")
     return parser.parse_args()
 
 def main():
@@ -31,7 +32,8 @@ def main():
         tracker=args.tracker,
         classes=[0], # 0 is usually person
         stream=True,
-        device=args.device
+        device=args.device,
+        imgsz=args.imgsz
     )
     
     tracking_data = {}
