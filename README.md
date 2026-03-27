@@ -2,7 +2,12 @@
 
 A fully-featured pipeline to track football players using YOLO, intelligently alias and group fragmented tracking IDs into custom "Player Identities" via a Streamlit UI, and generate a final visualization video featuring elegant labels and open formation networking.
 
+## Sample Output
+
+![Football Position Tracking Sample](positions.mp4)
+
 ## Environment Setup
+
 Make sure you have created the Conda environment and installed dependencies:
 
 ```bash
