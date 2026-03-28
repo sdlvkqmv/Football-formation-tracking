@@ -16,7 +16,7 @@ conda activate football_tracking
 pip install -r requirements.txt
 ```
 
-## How to Run the Pipeline
+## How to Run the Pipeline (YOLO26)
 
 ### Step 1: Track Players in Video
 Run the tracker on your input video. This uses BoT-SORT to assign IDs across frames. It will output both a `tracking_data.json` file and a new `track_output.mp4` video with clean, custom-sized ID labels on every player so you can quickly review the tracks without YOLO clutter.
@@ -69,3 +69,9 @@ python visualize.py \
   - Midfielder (`MF`): Green
   - Forward (`FW`): Red
   - Ref/Other: White (Excluded from network drawing)
+
+## How to Run the Pipeline (SAM2.1)
+
+```bash
+streamlit run sam_app.py
+```

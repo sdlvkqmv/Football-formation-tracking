@@ -5,3 +5,4 @@ numpy
 supervision
 pandas
 tqdm
+streamlit-image-coordinates
